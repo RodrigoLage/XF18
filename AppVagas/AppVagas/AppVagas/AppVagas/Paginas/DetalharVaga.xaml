@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppVagas.Paginas.DetalharVaga">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="{Binding NomeVaga}" FontSize="18" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Text="{Binding Empresa}" FontSize="10" HorizontalOptions="Center" TextColor="#DDDDDD"/>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Label Text="Quantidade (vagas)" HorizontalOptions="Start" FontSize="12" TextColor="Gray"/>
+                <Label Text="{Binding Quantidade}" FontSize="16" TextColor="Black" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Label Text="Cidade" HorizontalOptions="Start" FontSize="12" TextColor="Gray" />
+                <Label Text="{Binding Cidade}" FontSize="16" TextColor="Black" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Label Text="Salário R$" HorizontalOptions="Start" FontSize="12" TextColor="Gray" />
+                <Label Text="{Binding Salario}" FontSize="16" TextColor="Black"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                <Label Text="Descrição" HorizontalOptions="Start" FontSize="12" TextColor="Gray" />
+                <Label Text="{Binding Descricao}" FontSize="16" TextColor="Black" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Label Text="Tipo Contratação" HorizontalOptions="Start" FontSize="12" TextColor="Gray" />
+                <Label Text="{Binding TipoContratacao}" FontSize="16" TextColor="Black" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Label Text="Telefone" HorizontalOptions="Start" FontSize="12" TextColor="Gray" />
+                <Label Text="{Binding Telefone}" FontSize="16" TextColor="Black" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                <Label Text="Email" HorizontalOptions="Start" FontSize="12" TextColor="Gray" />
+                <Label Text="{Binding Email}" FontSize="16" TextColor="Black" />
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
